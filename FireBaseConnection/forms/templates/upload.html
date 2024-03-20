@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Data</title>
+</head>
+<body>
+    <h2>Upload Data</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
+
+
+# <script type="module">
+#   // Import the functions you need from the SDKs you need
+#   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+#   import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-analytics.js";
+#   // TODO: Add SDKs for Firebase products that you want to use
+#   // https://firebase.google.com/docs/web/setup#available-libraries
+
+#   // Your web app's Firebase configuration
+#   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+#   const firebaseConfig = {
+#     apiKey: "AIzaSyBMKgJ1_r_2BFBhoWG9g_ViG_XLtW85lbA",
+#     authDomain: "firestoretest-a5aa5.firebaseapp.com",
+#     projectId: "firestoretest-a5aa5",
+#     storageBucket: "firestoretest-a5aa5.appspot.com",
+#     messagingSenderId: "1005206559993",
+#     appId: "1:1005206559993:web:b0713596dd21316b3b1628",
+#     measurementId: "G-DQPPQTXE5N"
+#   };
+
+#   // Initialize Firebase
+#   const app = initializeApp(firebaseConfig);
+#   const analytics = getAnalytics(app);
+# </script>
